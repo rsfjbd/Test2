@@ -5,56 +5,56 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 1,
             name: "News 24",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "24/7 News coverage from around the world"
         },
         {
             id: 2,
             name: "Sports HD",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "Live sports events and highlights"
         },
         {
             id: 3,
             name: "Movie Channel",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "Latest blockbuster movies 24/7"
         },
         {
             id: 4,
             name: "Music TV",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "Non-stop music videos and concerts"
         },
         {
             id: 5,
             name: "Kids Zone",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "Cartoons and educational programs"
         },
         {
             id: 6,
             name: "Documentary",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "Nature, science and history documentaries"
         },
         {
             id: 7,
             name: "Fashion TV",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "Latest fashion trends and shows"
         },
         {
             id: 8,
             name: "Cooking Channel",
             logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
             description: "Culinary shows and recipes"
         }
     ];
