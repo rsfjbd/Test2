@@ -4,57 +4,57 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 1,
             name: "News 24",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/3498db/ffffff?text=News24",
+            streamUrl: "https://example.com/stream1.m3u8",
             description: "24/7 News coverage from around the world"
         },
         {
             id: 2,
             name: "Sports HD",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/e74c3c/ffffff?text=Sports",
+            streamUrl: "https://example.com/stream2.m3u8",
             description: "Live sports events and highlights"
         },
         {
             id: 3,
             name: "Movie Channel",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/2ecc71/ffffff?text=Movies",
+            streamUrl: "https://example.com/stream3.m3u8",
             description: "Latest blockbuster movies 24/7"
         },
         {
             id: 4,
             name: "Music TV",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/9b59b6/ffffff?text=Music",
+            streamUrl: "https://example.com/stream4.m3u8",
             description: "Non-stop music videos and concerts"
         },
         {
             id: 5,
             name: "Kids Zone",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/f1c40f/ffffff?text=Kids",
+            streamUrl: "https://example.com/stream5.m3u8",
             description: "Cartoons and educational programs"
         },
         {
             id: 6,
             name: "Documentary",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/1abc9c/ffffff?text=Docu",
+            streamUrl: "https://example.com/stream6.m3u8",
             description: "Nature, science and history documentaries"
         },
         {
             id: 7,
             name: "Fashion TV",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/e67e22/ffffff?text=Fashion",
+            streamUrl: "https://example.com/stream7.m3u8",
             description: "Latest fashion trends and shows"
         },
         {
             id: 8,
             name: "Cooking Channel",
-            logo: "https://i.postimg.cc/3RcqsQpk/tv-icon.webp",
-            streamUrl: "https://bdlivestreemhd.github.io/Test2/#",
+            logo: "https://via.placeholder.com/80/d35400/ffffff?text=Cooking",
+            streamUrl: "https://example.com/stream8.m3u8",
             description: "Culinary shows and recipes"
         }
     ];
