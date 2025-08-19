@@ -1,168 +1,169 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Channel data
-    const channels = [
-        {
-            id: 1,
-            name: "News 24",
-            logo: "https://via.placeholder.com/80/3498db/ffffff?text=News24",
-            streamUrl: "https://example.com/stream1.m3u8",
-            description: "24/7 News coverage from around the world"
-        },
-        {
-            id: 2,
-            name: "Sports HD",
-            logo: "https://via.placeholder.com/80/e74c3c/ffffff?text=Sports",
-            streamUrl: "https://example.com/stream2.m3u8",
-            description: "Live sports events and highlights"
-        },
-        {
-            id: 3,
-            name: "Movie Channel",
-            logo: "https://via.placeholder.com/80/2ecc71/ffffff?text=Movies",
-            streamUrl: "https://example.com/stream3.m3u8",
-            description: "Latest blockbuster movies 24/7"
-        },
-        {
-            id: 4,
-            name: "Music TV",
-            logo: "https://via.placeholder.com/80/9b59b6/ffffff?text=Music",
-            streamUrl: "https://example.com/stream4.m3u8",
-            description: "Non-stop music videos and concerts"
-        },
-        {
-            id: 5,
-            name: "Kids Zone",
-            logo: "https://via.placeholder.com/80/f1c40f/ffffff?text=Kids",
-            streamUrl: "https://example.com/stream5.m3u8",
-            description: "Cartoons and educational programs"
-        },
-        {
-            id: 6,
-            name: "Documentary",
-            logo: "https://via.placeholder.com/80/1abc9c/ffffff?text=Docu",
-            streamUrl: "https://example.com/stream6.m3u8",
-            description: "Nature, science and history documentaries"
-        },
-        {
-            id: 7,
-            name: "Fashion TV",
-            logo: "https://via.placeholder.com/80/e67e22/ffffff?text=Fashion",
-            streamUrl: "https://example.com/stream7.m3u8",
-            description: "Latest fashion trends and shows"
-        },
-        {
-            id: 8,
-            name: "Cooking Channel",
-            logo: "https://via.placeholder.com/80/d35400/ffffff?text=Cooking",
-            streamUrl: "https://example.com/stream8.m3u8",
-            description: "Culinary shows and recipes"
-        }
-    ];
+const channels = [
+  {
+    name: "Colors Bangla",
+    logo: "https://static.wikia.nocookie.net/etv-gspn-bangla/images/0/00/Colors_Bangla_HD_prelaunch_%282016%29.png/revision/latest?cb=20210507224847",
+    url: "http://stvlive.net:8080/colorsbangla/index.m3u8/gazibdz.stream/playlist.m3u8",
+    category: "Entertainment"
+  },
+  {
+    name: "Gazi Tv",
+    logo: "https://i.postimg.cc/CMrZ8hDz/Gtv.png",
+    url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8",
+    category: "Sports"
+  },
+  {
+    name: "Channel 9",
+    logo: "https://i.postimg.cc/0yDrh74w/Channel-9.png",
+    url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channel9hd.stream/playlist.m3u8",
+    category: "News"
+  },
+  {
+    name: "Channel I",
+    logo: "https://i.postimg.cc/52d256tN/Channel-i.png",
+    url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8",
+    category: "Entertainment"
+  },
+  {
+    name: "Nexus Television",
+    logo: "https://www.jagobd.com/wp-content/uploads/2021/07/nexustv.png",
+    url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/nexustv.stream/playlist.m3u8",
+    category: "News"
+  },
+  {
+    name: "All Time Movies",
+    logo: "https://i.postimg.cc/nVNDJ5bd/20250522-024451.jpg",
+    url: "https://cloudfrontnet.vercel.app/tplay/playout/209612/master.m3u8",
+    category: "Movies"
+  },
+  {
+    name: "Bangla Drams",
+    logo: "https://i.postimg.cc/G20mh9Lj/20250522-025124.jpg",
+    url: "https://cloudfrontnet.vercel.app/tplay/playout/209593/master.m3u8",
+    category: "Movies"
+  },
+  {
+    name: "Ahil Tv HD",
+    logo: "https://i.postimg.cc/6qPT58m2/20250522-024115.jpg",
+    url: "https://padmaonline.duckdns.org:8088/restream3/index.m3u8",
+    category: "Religious"
+  },
+  {
+    name: "Bangla Music",
+    logo: "https://i.postimg.cc/XYc8gBhr/20250522-025321.jpg",
+    url: "https://cloudfrontnet.vercel.app/tplay/playout/209587/master.m3u8",
+    category: "Music"
+  },
+  {
+    name: "Hindi Music",
+    logo: "https://i.postimg.cc/mkS3kyGX/20250522-030456.jpg",
+    url: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
+    category: "Music"
+  },
+{
+    name: "Gopal Bhar",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrBhuJjFmg5TZk7hVQEBtoOs7ejO-gwOOLLe9IAfZvsBblMLMLMZc0ZBsM&s=10",
+    url: "https://cloudfrontnet.vercel.app/tplay/playout/209611/master.m3u8",
+    category: "Animation"
+  },
+{
+    name: "Bangla Waz",
+    logo: "https://i.postimg.cc/26DBWLGP/20250522-030650.jpg",
+    url: "https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8",
+    category: "Religious"
+},
+  {
+    name: "Bangla Kirtan",
+    logo: "https://i.postimg.cc/HWJVL2TV/20250522-030919.jpg",
+    url: "https://cloudfrontnet.vercel.app/tplay/playout/209618/master.m3u8",
+    category: "Religious"
+  }
 
-    // News ticker data
-    const newsItems = [
-        "Breaking: New channels added to our lineup! Check them out now.",
-        "Special offer: Subscribe now and get 30 days free trial.",
-        "Live sports: Championship finals streaming this weekend.",
-        "System update: Improved streaming quality for all users."
-    ];
+];
 
-    // Initialize player variable
-    let player;
+// 🔁 এই URL টা হবে সব চ্যানেলের জন্য কমন লোগো (প্লে শুরুর আগে দেখা যাবে)
+const defaultPoster = "https://i.postimg.cc/Gt7rd4zD/20250609-120504.jpg";
 
-    // Populate channel list
-    const channelList = document.querySelector('.channel-list');
-    channels.forEach(channel => {
-        const channelItem = document.createElement('div');
-        channelItem.className = 'channel-item';
-        channelItem.innerHTML = `
-            <img src="${channel.logo}" alt="${channel.name}">
-            <span class="channel-name">${channel.name}</span>
-        `;
-        channelItem.addEventListener('click', () => loadChannel(channel));
-        channelList.appendChild(channelItem);
+let currentChannel = 0;
+let player = null;
+
+function loadChannel(index) {
+  const channel = channels[index];
+  if (player) player.destroy();
+
+  document.getElementById("player").style.opacity = 0;
+
+  setTimeout(() => {
+    player = new Clappr.Player({
+      source: channel.url,
+      parentId: "#player",
+      poster: defaultPoster, // সব চ্যানেলের জন্য একই পোস্টার
+      width: "100%",
+      height: "100%",
+      autoPlay: true,
+      mute: false,
     });
+    document.getElementById("player").style.opacity = 1;
+  }, 300);
+}
 
-    // Initialize news ticker
-    const newsTicker = document.getElementById('news-ticker');
-    let currentNewsIndex = 0;
-    
-    function updateNewsTicker() {
-        newsTicker.textContent = newsItems[currentNewsIndex];
-        currentNewsIndex = (currentNewsIndex + 1) % newsItems.length;
-    }
-    
-    updateNewsTicker();
-    setInterval(updateNewsTicker, 10000);
+function searchChannels() {
+  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const filteredChannels = channels.filter(channel => 
+    channel.name.toLowerCase().includes(searchTerm)
+  );
+  renderChannelList(filteredChannels);
+}
 
-    // Load channel function
-    function loadChannel(channel) {
-        // Update channel info
-        document.getElementById('channel-logo').src = channel.logo;
-        document.getElementById('channel-name').textContent = channel.name;
-        document.getElementById('channel-desc').textContent = channel.description;
-        
-        // Add animation class
-        const channelInfo = document.querySelector('.channel-info');
-        channelInfo.classList.add('animate-text');
-        setTimeout(() => channelInfo.classList.remove('animate-text'), 500);
-        
-        // Highlight selected channel
-        document.querySelectorAll('.channel-item').forEach(item => {
-            item.classList.remove('active');
-        });
-        event.currentTarget.classList.add('active');
-        
-        // Initialize or update player
-        if (player) {
-            player.destroy();
-        }
-        
-        player = new Clappr.Player({
-            source: channel.streamUrl,
-            parentId: "#player",
-            width: '100%',
-            height: '100%',
-            autoPlay: true,
-            mute: false,
-            poster: channel.logo,
-            plugins: [Clappr.FlasHLS],
-            watermark: 'https://via.placeholder.com/100x30/000000/ffffff?text=LiveTV',
-            position: 'top-right',
-            events: {
-                onError: function() {
-                    document.getElementById('channel-name').textContent = "Error loading channel";
-                    document.getElementById('channel-desc').textContent = "Please try another channel or check your connection";
-                }
-            }
-        });
-    }
+function renderChannelList(channelArray = channels) {
+  const list = document.getElementById("channelList");
+  list.innerHTML = '';
+  channelArray.forEach((channel) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<img src="${channel.logo}" alt=""> ${channel.name}`;
+    li.onclick = () => {
+      const originalIndex = channels.findIndex(c => c.name === channel.name);
+      currentChannel = originalIndex;
+      loadChannel(currentChannel);
+    };
+    list.appendChild(li);
+  });
+}
 
-    // Load first channel by default
-    if (channels.length > 0) {
-        loadChannel(channels[0]);
-    }
+function renderCategories() {
+  const categoryList = document.getElementById('categoryList');
+  const categories = [...new Set(channels.map(channel => channel.category))];
+  categoryList.innerHTML = '';
+  
+  categories.forEach(category => {
+    const li = document.createElement("li");
+    li.textContent = category;
+    li.onclick = () => {
+      const filtered = channels.filter(channel => channel.category === category);
+      renderChannelList(filtered);
+    };
+    categoryList.appendChild(li);
+  });
+}
 
-    // Search functionality
-    const searchInput = document.querySelector('.search-box input');
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
-        document.querySelectorAll('.channel-item').forEach(item => {
-            const channelName = item.querySelector('.channel-name').textContent.toLowerCase();
-            if (channelName.includes(searchTerm)) {
-                item.style.display = 'flex';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    });
+function toggleCategories() {
+  const categoryList = document.getElementById('categoryList');
+  if (categoryList.style.display === "none") {
+    renderCategories();
+    categoryList.style.display = "block";
+  } else {
+    categoryList.style.display = "none";
+  }
+}
 
-    // Add pulse animation to logo on hover
-    const logo = document.querySelector('.logo');
-    logo.addEventListener('mouseenter', function() {
-        this.classList.add('pulse');
-    });
-    logo.addEventListener('mouseleave', function() {
-        this.classList.remove('pulse');
-    });
-});
+function nextChannel() {
+  currentChannel = (currentChannel + 1) % channels.length;
+  loadChannel(currentChannel);
+}
+
+function prevChannel() {
+  currentChannel = (currentChannel - 1 + channels.length) % channels.length;
+  loadChannel(currentChannel);
+}
+
+renderChannelList();
+loadChannel(currentChannel);
