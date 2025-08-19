@@ -3,79 +3,92 @@ const channels = [
     name: "Colors Bangla",
     logo: "https://static.wikia.nocookie.net/etv-gspn-bangla/images/0/00/Colors_Bangla_HD_prelaunch_%282016%29.png/revision/latest?cb=20210507224847",
     url: "http://stvlive.net:8080/colorsbangla/index.m3u8/gazibdz.stream/playlist.m3u8",
-    category: "Entertainment"
+    category: "Entertainment",
+    icon: "🎭"
   },
   {
     name: "Gazi Tv",
     logo: "https://i.postimg.cc/CMrZ8hDz/Gtv.png",
     url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8",
-    category: "Sports"
+    category: "Sports",
+    icon: "⚽"
   },
   {
     name: "Channel 9",
     logo: "https://i.postimg.cc/0yDrh74w/Channel-9.png",
     url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channel9hd.stream/playlist.m3u8",
-    category: "News"
+    category: "News",
+    icon: "📰"
   },
   {
     name: "Channel I",
     logo: "https://i.postimg.cc/52d256tN/Channel-i.png",
     url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8",
-    category: "Entertainment"
+    category: "Entertainment",
+    icon: "🎭"
   },
   {
     name: "Nexus Television",
     logo: "https://www.jagobd.com/wp-content/uploads/2021/07/nexustv.png",
     url: "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/nexustv.stream/playlist.m3u8",
-    category: "News"
+    category: "News",
+    icon: "📰"
   },
   {
     name: "All Time Movies",
     logo: "https://i.postimg.cc/nVNDJ5bd/20250522-024451.jpg",
     url: "https://cloudfrontnet.vercel.app/tplay/playout/209612/master.m3u8",
-    category: "Movies"
+    category: "Movies",
+    icon: "🎬"
   },
   {
     name: "Bangla Drams",
     logo: "https://i.postimg.cc/G20mh9Lj/20250522-025124.jpg",
     url: "https://cloudfrontnet.vercel.app/tplay/playout/209593/master.m3u8",
-    category: "Movies"
+    category: "Movies",
+    icon: "🎬"
   },
   {
     name: "Ahil Tv HD",
     logo: "https://i.postimg.cc/6qPT58m2/20250522-024115.jpg",
     url: "https://padmaonline.duckdns.org:8088/restream3/index.m3u8",
-    category: "Religious"
+    category: "Religious",
+    icon: "🕌"
   },
   {
     name: "Bangla Music",
     logo: "https://i.postimg.cc/XYc8gBhr/20250522-025321.jpg",
     url: "https://cloudfrontnet.vercel.app/tplay/playout/209587/master.m3u8",
-    category: "Music"
+    category: "Music",
+    icon: "🎵"
   },
   {
     name: "Hindi Music",
     logo: "https://i.postimg.cc/mkS3kyGX/20250522-030456.jpg",
     url: "https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8",
-    category: "Music"
+    category: "Music",
+    icon: "🎵"
   },
 {
     name: "Gopal Bhar",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrBhuJjFmg5TZk7hVQEBtoOs7ejO-gwOOLLe9IAfZvsBblMLMLMZc0ZBsM&s=10",
     url: "https://cloudfrontnet.vercel.app/tplay/playout/209611/master.m3u8",
-    category: "Animation"
+    category: "Animation",
+    icon: "🤡"
   },
 {
     name: "Bangla Waz",
     logo: "https://i.postimg.cc/26DBWLGP/20250522-030650.jpg",
     url: "https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8",
-    category: "Religious"
+    category: "Religious",
+    icon: "🕌"
 },
   {
     name: "Bangla Kirtan",
     logo: "https://i.postimg.cc/HWJVL2TV/20250522-030919.jpg",
     url: "https://cloudfrontnet.vercel.app/tplay/playout/209618/master.m3u8",
-    category: "Religious"
+    category: "Religious",
+    icon: "🕌"
   }
 
 ];
@@ -128,15 +141,17 @@ function renderChannelList(channelArray = channels) {
 
 function renderCategories() {
   const categoryList = document.getElementById('categoryList');
-  const categories = [...new Set(channels.map(channel => channel.category))];
+  // Get unique categories with their icons
+  const uniqueCategories = [...new Map(channels.map(item => [item.category, {category: item.category, icon: item.icon}])).values()];
   categoryList.innerHTML = '';
   
-  categories.forEach(category => {
+  uniqueCategories.forEach(cat => {
     const li = document.createElement("li");
-    li.textContent = category;
+    li.innerHTML = `${cat.icon} ${cat.category}`;
     li.onclick = () => {
-      const filtered = channels.filter(channel => channel.category === category);
+      const filtered = channels.filter(channel => channel.category === cat.category);
       renderChannelList(filtered);
+      categoryList.style.display = 'none'; // একটি ক্যাটাগরি সিলেক্ট করলে লিস্ট হাইড হয়ে যাবে
     };
     categoryList.appendChild(li);
   });
@@ -144,9 +159,9 @@ function renderCategories() {
 
 function toggleCategories() {
   const categoryList = document.getElementById('categoryList');
-  if (categoryList.style.display === "none") {
+  if (categoryList.style.display === "none" || categoryList.style.display === "") {
     renderCategories();
-    categoryList.style.display = "block";
+    categoryList.style.display = "flex";
   } else {
     categoryList.style.display = "none";
   }
