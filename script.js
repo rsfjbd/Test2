@@ -1,4 +1,5 @@
 const channels = [
+  
   {
       "name": "WWE",
       "group-title": "SPORTS",
@@ -341,9 +342,7 @@ const channels = [
   {
     name: "Channel 24",
     logo: "https://s3.aynaott.com/storage/502b8de24fcfc4443c376270a6e45527",
-    "group-title": "News",
-    "tvg-id": "24",
-    "url": "https://tvsen6.aynaott.com/channel24/index.m3u8?e=1753741202&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=85169db4171f59cc700c2230da1474b0"
+    url: "https://tvsen6.aynaott.com/channel24/index.m3u8?e=1753741202&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=85169db4171f59cc700c2230da1474b0"
   },
   {
     name: "Asian TV",
@@ -363,63 +362,61 @@ const channels = [
   {
     name: "SA TV",
     logo: "https://s3.aynaott.com/storage/83796140b05a889d37c4c98ed8c43821",
-    url": "https://tvsen6.aynaott.com/satv/index.m3u8?e=1753741203&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=3bba4c56325c7ade12be44d6d003375b"
+    url: "https://tvsen6.aynaott.com/satv/index.m3u8?e=1753741203&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=3bba4c56325c7ade12be44d6d003375b"
   },
   {
     name: "DBC News",
     logo: "https://s3.aynaott.com/storage/e8bb743022a2b6b0ee714bbdb2715cbe",
-    url": "https://tvsen6.aynaott.com/dbcnews/index.m3u8?e=1753741204&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=de6168e3320b292be83833132d83ade8"
+    url: "https://tvsen6.aynaott.com/dbcnews/index.m3u8?e=1753741204&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=de6168e3320b292be83833132d83ade8"
   },
   {
     name: "Ekhon TV",
     logo: "https://s3.aynaott.com/storage/94ff4123b6c533d0332d63944ccf5868",
-    url": "https://tvsen6.aynaott.com/ekhontv/index.m3u8?e=1753741204&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=5d53d11d328153c8c0ebbe56bf6de37e"
+    url: "https://tvsen6.aynaott.com/ekhontv/index.m3u8?e=1753741204&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=5d53d11d328153c8c0ebbe56bf6de37e"
   },
   {
     name: "News 24 BD",
     logo: "https://s3.aynaott.com/storage/b102f206ea73dfdbc591e9cf6c8c478d",
-    url": "https://tvsen6.aynaott.com/news24/index.m3u8?e=1753741204&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=0e298e2f9e3a55bb4a903008493653ec"
+    url: "https://tvsen6.aynaott.com/news24/index.m3u8?e=1753741204&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=0e298e2f9e3a55bb4a903008493653ec"
   },
   {
     name: "Duronto TV",
     logo: "https://s3.aynaott.com/storage/1d3d06e02fc9ba45a990b65aebd04ebc",
-    url": "https://tvsen4.aynaott.com/durontotv/index.m3u8?e=1753820404&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=67a2ed7a277714726ccd76d662959055"
+    url: "https://tvsen4.aynaott.com/durontotv/index.m3u8?e=1753820404&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=67a2ed7a277714726ccd76d662959055"
   },
   {
     name: "Bangla TV",
     logo: "https://s3.aynaott.com/storage/5b22893ae4e816ef2cf87e63c96e9e08",
-    url": "https://tvsen6.aynaott.com/banglatv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=f12df6b329a0ee4ea22ef2c0634a39c6"
+    url: "https://tvsen6.aynaott.com/banglatv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=f12df6b329a0ee4ea22ef2c0634a39c6"
   },
   {
     name: "Ekattor TV",
     logo: "https://s3.aynaott.com/storage/c69d4851784c5fefa6d0117653d227c3",
-    url": "https://tvsen6.aynaott.com/ekattorbdtv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=8464bbbc9450c5e5935bca44a76de9c1"
+    url: "https://tvsen6.aynaott.com/ekattorbdtv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=8464bbbc9450c5e5935bca44a76de9c1"
   },
   {
     name: "Jamuna TV",
     logo: "https://s3.aynaott.com/storage/18c65f48bb15b1e59a8d91b8d1675122",
-    url": "https://tvsen6.aynaott.com/jamunatv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=51b90e88fcf722380246847daaf2ba24"
+    url: "https://tvsen6.aynaott.com/jamunatv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=51b90e88fcf722380246847daaf2ba24"
   },
   {
     name: "Mohona TV",
     logo: "https://s3.aynaott.com/storage/663c8079982ff6a45fc99e78c865a63d",
-    url": "https://tvsen6.aynaott.com/mohonatv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=7747ffeca756c12cc69dcb4b3c9312e8"
+    url: "https://tvsen6.aynaott.com/mohonatv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=7747ffeca756c12cc69dcb4b3c9312e8"
   },
   {
     name: "NEXUS TV",
     logo: "https://s3.aynaott.com/storage/db85422953e3a1652e26b0a14eed92a9",
-    url": "https://tvsen6.aynaott.com/nexustv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=81b0a802403aad34379983da189cd5f97"
+    url: "https://tvsen6.aynaott.com/nexustv/index.m3u8?e=1753741205&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=81b0a802403aad34379983da189cd5f97"
   }
 ];
 
-// 🔁 এই URL টা হবে সব চ্যানেলের জন্য কমন লোগো (প্লে শুরুর আগে দেখা যাবে)
-const defaultPoster = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEiEhvjeDh_Cr2Wgt6NFK_CrBSkPiQB9Lqfw&usqp=CAU";
+const defaultPoster = "https://i.postimg.cc/Gt7rd4zD/20250609-120504.jpg";
 
 let currentChannel = 0;
 let player = null;
 
-function loadChannel(index) {
-  const channel = channels[index];
+function loadChannel(channel) {
   if (player) player.destroy();
 
   document.getElementById("player").style.opacity = 0;
@@ -428,7 +425,7 @@ function loadChannel(index) {
     player = new Clappr.Player({
       source: channel.url,
       parentId: "#player",
-      poster: defaultPoster, // সব চ্যানেলের জন্য একই পোস্টার
+      poster: defaultPoster,
       width: "100%",
       height: "100%",
       autoPlay: true,
