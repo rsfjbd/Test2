@@ -80,14 +80,12 @@ const channels = [
 
 ];
 
-// 🔁 এই URL টা হবে সব চ্যানেলের জন্য কমন লোগো (প্লে শুরুর আগে দেখা যাবে)
 const defaultPoster = "https://i.postimg.cc/Gt7rd4zD/20250609-120504.jpg";
 
 let currentChannel = 0;
 let player = null;
 
-function loadChannel(index) {
-  const channel = channels[index];
+function loadChannel(channel) {
   if (player) player.destroy();
 
   document.getElementById("player").style.opacity = 0;
@@ -96,7 +94,7 @@ function loadChannel(index) {
     player = new Clappr.Player({
       source: channel.url,
       parentId: "#player",
-      poster: defaultPoster, // সব চ্যানেলের জন্য একই পোস্টার
+      poster: defaultPoster,
       width: "100%",
       height: "100%",
       autoPlay: true,
@@ -121,9 +119,8 @@ function renderChannelList(channelArray = channels) {
     const li = document.createElement("li");
     li.innerHTML = `<img src="${channel.logo}" alt=""> ${channel.name}`;
     li.onclick = () => {
-      const originalIndex = channels.findIndex(c => c.name === channel.name);
-      currentChannel = originalIndex;
-      loadChannel(currentChannel);
+      currentChannel = channels.findIndex(c => c.name === channel.name);
+      loadChannel(channel);
     };
     list.appendChild(li);
   });
@@ -157,13 +154,13 @@ function toggleCategories() {
 
 function nextChannel() {
   currentChannel = (currentChannel + 1) % channels.length;
-  loadChannel(currentChannel);
+  loadChannel(channels[currentChannel]);
 }
 
 function prevChannel() {
   currentChannel = (currentChannel - 1 + channels.length) % channels.length;
-  loadChannel(currentChannel);
+  loadChannel(channels[currentChannel]);
 }
 
 renderChannelList();
-loadChannel(currentChannel);
+loadChannel(channels[currentChannel]);
