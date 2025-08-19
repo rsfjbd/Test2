@@ -17,14 +17,18 @@
     </div>
     <div class="sidebar">
       <h2>All Channels</h2>
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search channels..." />
-        <button onclick="searchChannels()">🔍 Search</button>
+      <div class="top-controls">
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search..." oninput="searchChannels()">
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="category-toggle-container">
+          <button onclick="toggleCategories()" id="categoryToggleButton">
+            <span class="category-icon">☰</span>
+          </button>
+        </div>
       </div>
-      <div class="category-section">
-        <button onclick="toggleCategories()">Show Categories</button>
-        <ul id="categoryList" style="display: none;"></ul>
-      </div>
+      <ul id="categoryList" class="category-list"></ul>
       <ul id="channelList"></ul>
     </div>
   </div>
