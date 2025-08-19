@@ -281,7 +281,7 @@ const channels = [
   {
     name: "Bangla Vision",
     logo: "https://s3.aynaott.com/storage/e86c14566b4d5b6dd68ac37dce4f6043",
-    url: "https://tvsen5.aynaott.com/banglavision/index.m3u8?e=1753741200&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=4dc66f272e2e0797c300f871ec29e7ac"
+    url": "https://tvsen5.aynaott.com/banglavision/index.m3u8?e=1753741200&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=4dc66f272e2e0797c300f871ec29e7ac"
   },
   {
     name: "RTV",
