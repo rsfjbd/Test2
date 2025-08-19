@@ -44,8 +44,9 @@ body {
 }
 
 .sidebar img {
-  height: 20px;
-  margin-right: 10px;
+  height: 40px; /* লোগোর উচ্চতা বড় করা হয়েছে */
+  width: 40px; /* লোগোর প্রস্থ বড় করা হয়েছে */
+  margin-right: 15px; /* লোগো এবং নামের মধ্যে ব্যবধান বাড়ানো হয়েছে */
   vertical-align: middle;
 }
 
