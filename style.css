@@ -82,52 +82,62 @@ button:hover {
   background: #666;
 }
 
-.search-container {
+.top-controls {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 15px;
+  gap: 10px;
+}
+
+.search-container {
+  flex-grow: 1;
+  position: relative;
 }
 
 #searchInput {
-  flex-grow: 1;
-  padding: 8px;
+  width: 100%;
+  padding: 8px 10px 8px 30px; /* আইকনের জন্য জায়গা */
   border: none;
   border-radius: 5px;
   background: #333;
   color: white;
 }
 
-.search-container button {
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.category-toggle-container button {
   padding: 8px 12px;
-  margin-left: 5px;
 }
 
-.category-section {
-  margin-bottom: 15px;
-}
-
-.category-section button {
-  width: 100%;
-  text-align: left;
-  background: #444;
-  border: none;
+.category-icon {
+  font-size: 16px;
   color: white;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
-.category-section ul {
-  list-style-type: none;
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
+  list-style: none;
   margin-top: 10px;
 }
 
-.category-section li {
+.category-list li {
   background: #2a2a2a;
   padding: 8px;
   margin-bottom: 5px;
   border-radius: 5px;
   cursor: pointer;
+  flex: 0 0 48%; /* দুটি কলামে দেখানোর জন্য */
+  text-align: center;
 }
 
 @keyframes slideInRight {
