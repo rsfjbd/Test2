@@ -276,7 +276,7 @@ const channels = [
   {
     name: "NTV",
     logo: "https://s3.aynaott.com/storage/73c39182782a201338070c2f4429e449",
-    url: "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.fmp4.m3u8?token=010d732ebd55578c294ad9b7a9378a4d38e1545e-5947172ad1840765129abbacfabd89c6-1753734599-1753733699&remote=no_check_ip"
+    url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.fmp4.m3u8?token=010d732ebd55578c294ad9b7a9378a4d38e1545e-5947172ad1840765129abbacfabd89c6-1753734599-1753733699&remote=no_check_ip"
   },
   {
     name: "Bangla Vision",
