@@ -82,22 +82,14 @@ button:hover {
   background: #666;
 }
 
-.top-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-  gap: 10px;
-}
-
 .search-container {
-  flex-grow: 1;
   position: relative;
+  margin-bottom: 15px;
 }
 
 #searchInput {
   width: 100%;
-  padding: 8px 10px 8px 30px; /* আইকনের জন্য জায়গা */
+  padding: 8px 10px 8px 30px;
   border: none;
   border-radius: 5px;
   background: #333;
@@ -110,34 +102,6 @@ button:hover {
   top: 50%;
   transform: translateY(-50%);
   color: #aaa;
-}
-
-.category-toggle-container button {
-  padding: 8px 12px;
-}
-
-.category-icon {
-  font-size: 16px;
-  color: white;
-}
-
-.category-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  list-style: none;
-  margin-top: 10px;
-}
-
-.category-list li {
-  background: #2a2a2a;
-  padding: 8px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  flex: 0 0 48%; /* দুটি কলামে দেখানোর জন্য */
-  text-align: center;
 }
 
 @keyframes slideInRight {
