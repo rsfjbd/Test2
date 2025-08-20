@@ -110,12 +110,6 @@ function prevChannel() {
   loadChannel(channels[currentChannel]);
 }
 
-// ফুলস্ক্রিন বাটন
-document.getElementById('fullscreenButton').addEventListener('click', () => {
-  if (player) {
-    player.requestFullscreen();
-  }
-});
 
 renderChannelList();
 
