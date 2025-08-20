@@ -5,15 +5,21 @@
   <title>Rs Live 247</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clappr-pip-plugin@latest/dist/clappr-pip-plugin.min.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="main">
       <div id="player"></div>
       <div class="controls">
+        <button id="fullscreenButton">📺 Fullscreen</button>
         <button onclick="prevChannel()">⏮️ Prev</button>
         <button onclick="nextChannel()">⏭️ Next</button>
       </div>
+      <button class="toggle-sidebar-button" onclick="toggleSidebar()">
+        ☰ সকল চ্যানেল
+      </button>
     </div>
     <div class="sidebar">
       <div class="search-container">
