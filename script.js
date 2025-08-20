@@ -5,6 +5,11 @@ const channels = [
   //   "name": "N TV",
   //   "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
   //   "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8"
+  // },
+  // {
+  //   "name": "N TV",
+  //   "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
+  //   "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8"
   // }
 ];
 
