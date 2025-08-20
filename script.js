@@ -24,7 +24,7 @@ const channels = [
     "logo": "https://i.postimg.cc/HWXvkyZ7/stars1.jpg",
     "url": "https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8"
   },
-  {
+    {
     "name": "Ten Cricket",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo1clcgXKVu87qdMMczrTAGwcnEgTi6AUW0lncEdjGlNSgKIGQ3wXeJnE4&s=10",
     "url": "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8"
@@ -407,3 +407,12 @@ renderChannelList();
 if (channels.length > 0) {
   loadChannel(channels[currentChannel]);
 }
+
+// Add keyboard event listener for arrow keys
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
+    prevChannel();
+  } else if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
+    nextChannel();
+  }
+});
