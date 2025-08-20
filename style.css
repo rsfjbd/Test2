@@ -63,25 +63,30 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
+/* বাটন কন্ট্রোল */
 .controls {
   background: #222;
-  padding: 10px;
-  text-align: center;
+  padding: 15px;
+  text-align: center;  /* বাটন সেন্টারে থাকবে */
 }
 
-button {
-  background: #444;
+.controls button {
+  background: #ff5722;   /* কমলা রঙ */
   border: none;
   color: white;
-  padding: 10px 20px;
-  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  margin: 10px;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s;
+  border-radius: 30px;   /* গোলাকার */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s, transform 0.2s;
 }
 
-button:hover {
-  background: #666;
+.controls button:hover {
+  background: #e64a19;
+  transform: scale(1.05);
 }
 
 .search-container {
