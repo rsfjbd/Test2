@@ -2,9 +2,9 @@ const channels = [
   // এখানে আপনার চ্যানেলগুলোর তথ্য যোগ করুন
   // উদাহরণ:
   // {
-  //   "name": "Channel Name",
-  //   "logo": "https://example.com/logo.png",
-  //   "url": "https://example.com/stream.m3u8"
+  //   "name": "N TV",
+  //   "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
+  //   "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8"
   // }
 ];
 
