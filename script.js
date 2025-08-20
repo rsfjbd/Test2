@@ -1,64 +1,54 @@
 const channels = [
   {
-      "name": "WWE",
-      "group-title": "SPORTS",
-      "logo": "https://i.postimg.cc/0jv7Xbqz/wwe.jpg",
-      "url": "https://smart.bengaldigital.live/WWE/index.m3u8"
-    },
-    {
-      "name": "T Sports 1",
-      "group-title": "SPORTS",
-      "logo": "https://i.postimg.cc/L6VyzMM9/tsports.jpg",
-      "url": "https://tvsen5.aynaott.com/tsports/index.m3u8?e=1753741223&u=9a031201-22d8-4f7e-9516-7d246a8fedc3&token=286a45e3006c0b412ce19722499f2126"
-    },
-    {
-      "name": "Star Sports 1",
-      "group-title": "SPORTS",
-      "logo": "https://i.postimg.cc/HWXvkyZ7/stars1.jpg",
-      "url": "https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8"
-    },
-    {
-      "name": "Zee Bangla",
-      "group-title": "Kolkata",
-      "logo": "https://i.postimg.cc/ZRjjSzFd/20250403-190441.png",
-      "tvg-id": "2",
-      "url": "https://catchup.yuppcdn.net/amazonv2/36/preview/zeebangla/master/chunklist.m3u8"
-    },
-    {
-      "name": "NTV",
-      "group-title": "Akash Go",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
-      "tvg-id": "99",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8"
-    },
-    {
-      "name": "Bangla Vision",
-      "group-title": "Akash Go",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735561344354.png",
-      "tvg-id": "100",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8"
-    },
-    {
-      "name": "Somoy",
-      "group-title": "Akash Go",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560559088.png",
-      "tvg-id": "98",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8"
-    },
-    {
-      "name": "Jamuna TV",
-      "group-title": "Akash Go",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png",
-      "tvg-id": "97",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8"
-    },
-    {
-      "name": "Independent TV",
-      "group-title": "Akash Go",
-      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739964387847.png",
-      "tvg-id": "96",
-      "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8"
-    }
+    "name": "N TV",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
+    "url": "https://ythls-v3.onrender.com/channel/UC0V3IJCnr6ZNjB9t_GLhFFA.m3u8"
+  },
+  {
+    "name": "Channel i",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Channel-i.svg",
+    "url": "https://ythls-v3.onrender.com/channel/UCdKuS9EjfeLCzv2nhwaGqag.m3u8"
+  },
+  {
+    "name": "ATN News",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/1/1a/ATN_News_logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCi74OQxG_6qVt7zE7shwq5Q.m3u8"
+  },
+  {
+    "name": "Somoy TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/1/17/Somoy_TV_logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCxHoBXkY88Tb8z1Ssj6CWsQ.m3u8"
+  },
+  {
+    "name": "RTV",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Rtv_bangladesh_logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCUlH4G7c1zG0uO7AqS0XISA.m3u8"
+  },
+  {
+    "name": "Maasranga",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/23/Maasranga_Television_Logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCdq4pJ7E3lU10hG_Aw5z1-Q.m3u8"
+  },
+  {
+    "name": "Independent TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/5/54/Independent_TV_logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCpL8xJ9sZHY4fhx7ZEdnYxQ.m3u8"
+  },
+  {
+    "name": "DBC News",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/DBC_News_Logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCN2vO1xG2xAq7npOTQY3g6g.m3u8"
+  },
+  {
+    "name": "Ekattor TV",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/1/15/Ekattor_TV_logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCqfQnx1i-J5knQ4K-bYrj9Q.m3u8"
+  },
+  {
+    "name": "Bangla Vision",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7d/Banglavision_logo.png",
+    "url": "https://ythls-v3.onrender.com/channel/UCVXsZpJ6w8oyd2X2gYdExMw.m3u8"
+  }
 ];
 
 let currentChannel = 0;
@@ -129,7 +119,7 @@ function toggleSidebar() {
     clearTimeout(hideTimeout);
     hideTimeout = setTimeout(() => {
       sidebar.classList.remove('visible');
-    }, 3000); // 3 সেকেন্ড পর হাইড হবে
+    }, 3000); // 3 সেকেন্ড পরে হাইড হবে
   }
 }
 
@@ -142,7 +132,7 @@ document.getElementById('fullscreenButton').addEventListener('click', () => {
 
 renderChannelList();
 
-// প্রাথমিক অবস্থায় কোনো চ্যানেল না থাকলে প্রথম চ্যানেলে লোড করার প্রয়োজন নেই।
+// প্রাথমিক অবস্থায় প্রথম চ্যানেল চালু করা
 if (channels.length > 0) {
   loadChannel(channels[currentChannel]);
 }
