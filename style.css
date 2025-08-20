@@ -99,7 +99,7 @@ body {
 }
 
 .bell-icon {
-  color: #ffffff;
+  color: #ff5722;
   font-size: 18px;
   margin-right: 10px;
   flex-shrink: 0;
@@ -135,4 +135,4 @@ marquee {
 .controls button:hover {
   background: #e64a19;
   transform: scale(1.05);
-  }
+}
