@@ -13,7 +13,7 @@ body {
 
 .sidebar {
   position: relative;
-  width: 250px;
+  width: 200px;
   height: 100%;
   background: #1f1f1f;
   padding: 20px;
@@ -71,7 +71,7 @@ body {
 }
 
 .controls button {
-  background: #ff5722;   /* কমলা রঙ */
+  background: grey;   /* কমলা রঙ */
   border: none;
   color: white;
   font-size: 16px;
