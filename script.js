@@ -114,12 +114,12 @@ function prevChannel() {
 function toggleSidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.classList.toggle('visible');
-  
+
   if (sidebar.classList.contains('visible')) {
     clearTimeout(hideTimeout);
     hideTimeout = setTimeout(() => {
       sidebar.classList.remove('visible');
-    }, 3000); // 3 সেকেন্ড পরে হাইড হবে
+    }, 3000); // ৩ সেকেন্ড পরে হাইড হবে
   }
 }
 
