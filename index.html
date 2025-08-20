@@ -7,11 +7,18 @@
   <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clappr-pip-plugin@latest/dist/clappr-pip-plugin.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <div class="main">
       <div id="player"></div>
+      <div class="marquee-container">
+        <span class="bell-icon"><i class="fa fa-bell"></i></span>
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+          আপনার পছন্দের যেকোনো চ্যানেল দেখতে পাশের লিস্ট থেকে চ্যানেলের উপর ক্লিক করুন অথবা কি-বোর্ডের আপ এবং ডাউন অ্যারো বাটন ব্যবহার করুন। যেকোনো খেলা লাইভ দেখতে T Sports, Gazi TV এবং Star Sports চ্যানেল সিলেক্ট করুন। 
+        </marquee>
+      </div>
       <div class="controls">
         <button onclick="prevChannel()">⏮️ Prev</button>
         <button onclick="nextChannel()">⏭️ Next</button>
