@@ -16,14 +16,39 @@ body {
   height: 100%;
   background: #1f1f1f;
   padding: 20px;
-  overflow-y: auto;
-  z-index: 10;
-  box-sizing: border-box; /* Add this line */
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 15px;
+  flex-shrink: 0; /* Prevents the search bar from shrinking */
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px 10px 8px 30px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
+  overflow-y: auto; /* Enables scrolling for the channel list */
+  margin-top: 0;
+  flex-grow: 1; /* Allows the list to fill the remaining space */
 }
 
 .sidebar li {
@@ -41,6 +66,7 @@ body {
 .sidebar li:hover {
   background: #ff5722;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  /* Removed transform to fix the moving effect */
 }
 
 .sidebar img {
@@ -63,10 +89,32 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* বাটন কন্ট্রোল */
+/* Marquee Styles */
+.marquee-container {
+  display: flex;
+  align-items: center;
+  background: #333;
+  padding: 5px 10px;
+  border-top: 2px solid #ff5722;
+}
+
+.bell-icon {
+  color: red;
+  font-size: 18px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+marquee {
+  color: #fff;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+/* Button Controls */
 .controls {
   background: #222;
-  padding: 15px;
+  padding: 10px; /* Reduced padding */
   text-align: center;
 }
 
@@ -74,12 +122,12 @@ body {
   background: #ff5722;
   border: none;
   color: white;
-  font-size: 16px;
+  font-size: 14px; /* Reduced font size */
   font-weight: bold;
-  padding: 12px 30px;
-  margin: 10px;
+  padding: 8px 20px; /* Reduced padding */
+  margin: 5px;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: background 0.3s, transform 0.2s;
 }
@@ -87,27 +135,4 @@ body {
 .controls button:hover {
   background: #e64a19;
   transform: scale(1.05);
-}
-
-.search-container {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-#searchInput {
-  width: calc(100% - 20px); /* Adjust this line */
-  padding: 8px 10px 8px 30px;
-  border: none;
-  border-radius: 5px;
-  background: #333;
-  color: white;
-  box-sizing: border-box; /* Add this line */
-}
-
-.search-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #aaa;
 }
