@@ -53,7 +53,6 @@ const channels = [
 
 let currentChannel = 0;
 let player = null;
-let hideTimeout;
 
 function loadChannel(channel) {
   if (player) player.destroy();
@@ -109,18 +108,6 @@ function prevChannel() {
   if (channels.length === 0) return;
   currentChannel = (currentChannel - 1 + channels.length) % channels.length;
   loadChannel(channels[currentChannel]);
-}
-
-function toggleSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.toggle('visible');
-
-  if (sidebar.classList.contains('visible')) {
-    clearTimeout(hideTimeout);
-    hideTimeout = setTimeout(() => {
-      sidebar.classList.remove('visible');
-    }, 3000); // ৩ সেকেন্ড পরে হাইড হবে
-  }
 }
 
 // ফুলস্ক্রিন বাটন
