@@ -140,7 +140,7 @@ const channels = [
     "url": "https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/8fd382eb-7285-4e25-be5a-3e5795672ffe/2.m3u8"
   },
   {
-    "name": "DD বাংলা",
+    "name": "DD",
     "logo": "https://i.postimg.cc/kM8sH9Jz/20250407-152000.png",
     "url": "http://103.122.252.100:8080/NAGORIK-TV/index.m3u84e25-be5a-3e5795672ffe/2.m3u8"
   },
