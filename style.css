@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background: #121212;
   color: white;
+  overflow: hidden;
 }
 
 .container {
@@ -11,11 +12,21 @@ body {
 }
 
 .sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 250px;
+  height: 100%;
   background: #1f1f1f;
   padding: 20px;
   overflow-y: auto;
-  animation: slideInRight 0.5s ease-in-out;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.sidebar.visible {
+  transform: translateX(0);
 }
 
 .sidebar ul {
@@ -24,25 +35,27 @@ body {
 }
 
 .sidebar li {
+  display: flex;
+  align-items: center;
   padding: 10px;
   cursor: pointer;
   transition: background 0.3s, box-shadow 0.3s;
   border-radius: 8px;
   margin-bottom: 8px;
   background: #2a2a2a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* শ্যাডো যোগ করা হয়েছে */
 }
 
 .sidebar li:hover {
   background: #ff5722;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 .sidebar img {
   height: 40px; 
   width: 40px; 
   margin-right: 15px;
-  vertical-align: middle;
+  border-radius: 50%; /* লোগো গোলাকার করা হয়েছে */
 }
 
 .main {
@@ -50,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #000;
+  position: relative;
 }
 
 #player {
@@ -100,7 +114,20 @@ button:hover {
   color: #aaa;
 }
 
-@keyframes slideInRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+.toggle-sidebar-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid #ff5722;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-sidebar-button:hover {
+  background: #ff5722;
 }
